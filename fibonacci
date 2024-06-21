@@ -1,0 +1,19 @@
+import UIKit
+
+class Assignment {
+    var numbers = [0, 1]
+    var i: Int = 0
+    var number: Int = 0
+    
+    func fibonacci(n: Int) {
+        while (i < (n-2)) {
+            number = numbers[i] + numbers[i + 1]
+            numbers.append(number)
+            i += 1
+        }
+    print(numbers)
+    }
+}
+
+var assignment = Assignment()
+assignment.fibonacci(n: 10)
